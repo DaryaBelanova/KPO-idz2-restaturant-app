@@ -1,0 +1,87 @@
+###
+GET http://localhost:8080/menu
+Content-Type: application/json
+
+###
+POST http://localhost:8080/order/create?login=user1
+Content-Type: application/json
+
+{
+  "dishes": [
+    {
+      "id": 1,
+      "description": "Pizza Margarita",
+      "durationInMin": 15,
+      "price": 350
+    },
+    {
+      "id": 3,
+      "description": "Mohito",
+      "durationInMin": 5,
+      "price": 100
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/order/create?login=user1
+Content-Type: application/json
+
+{
+  "dishes": [
+    {
+      "id": 1,
+      "description": "Salad Caesar",
+      "durationInMin": 10,
+      "price": 20
+    },
+    {
+      "id": 3,
+      "description": "Mohito",
+      "durationInMin": 5,
+      "price": 100
+    }
+  ]
+}
+
+###
+POST http://localhost:8080/order/create?login=user1
+Content-Type: application/json
+
+{
+  "dishes": [
+    {
+      "id": 2,
+      "description": "Salad Caesar",
+      "durationInMin": 10,
+      "price": 300
+    },
+    {
+      "id": 3,
+      "description": "Mohito",
+      "durationInMin": 5,
+      "price": 100
+    }
+  ]
+}
+
+###
+GET http://localhost:8080/order/list?login=user1
+Content-Type: application/json
+
+###
+GET http://localhost:8080/order/status?orderId=1&login=user1
+
+###
+POST http://localhost:8080/order/cancel?orderId=1&login=user1
+
+###
+GET http://localhost:8080/order/list?login=user1
+Content-Type: application/json
+
+###
+POST http://localhost:8080/order/pay?orderId=2&login=user1
+
+###
+GET http://localhost:8080/order/list?login=user1
+Content-Type: application/json

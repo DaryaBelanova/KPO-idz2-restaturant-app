@@ -1,0 +1,73 @@
+###
+POST http://localhost:8080/menu/add?login=admin1
+Content-Type: application/json
+
+{"id": 4,
+  "description": "New dish",
+  "durationInMin": 20,
+  "price": 100
+}
+
+###
+POST http://localhost:8080/menu/add?login=admin1
+Content-Type: application/json
+
+{"id": 4,
+  "description": "New dish",
+  "durationInMin": 20,
+  "price": 100
+}
+
+###
+GET http://localhost:8080/admin/menu
+Content-Type: application/json
+
+###
+POST http://localhost:8080/menu/delete?dishId=4&login=admin1
+
+POST http://localhost:8080/menu/add?login=user1
+Content-Type: application/json
+
+{"id": 4,
+  "description": "New dish",
+  "durationInMin": 20,
+  "price": 100
+}
+
+###
+POST http://localhost:8080/menu/delete?dishId=4&login=admin1
+
+POST http://localhost:8080/menu/add?login=user1
+Content-Type: application/json
+
+{"id": 4,
+  "description": "New dish",
+  "durationInMin": 20,
+  "price": 100
+}
+
+###
+GET http://localhost:8080/admin/menu
+Content-Type: application/json
+
+###
+POST http://localhost:8080/menu/add?login=user1
+Content-Type: application/json
+
+{"id": 4,
+  "description": "New dish",
+  "durationInMin": 20,
+  "price": 100
+}
+
+###
+POST http://localhost:8080/menu/update?dishId=1&dishPrice=350&login=admin1
+Content-Type: application/json
+
+###
+GET http://localhost:8080/admin/menu
+Content-Type: application/json
+
+###
+POST http://localhost:8080/menu/update?dishId=4&dishPrice=350&login=admin1
+Content-Type: application/json
